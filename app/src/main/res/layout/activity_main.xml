@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULADORA"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/valorUNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:numeric="decimal" />
+
+        <EditText
+            android:id="@+id/valorDOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:numeric="decimal" />
+
+        <TextView
+            android:id="@+id/Resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/Suma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sumar"
+            android:text="SUMA" />
+
+        <Button
+            android:id="@+id/Resta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="restar"
+            android:text="RESTA" />
+
+        <Button
+            android:id="@+id/Multiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="multiplicar"
+            android:text="MULTIPLICACION" />
+
+        <Button
+            android:id="@+id/Division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dividir"
+            android:text="DIVISION" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
